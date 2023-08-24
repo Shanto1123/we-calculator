@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Calculator</a>
+  </nav>
+  
+  
+  <div class="container calculator-container">
+   
+    <div class="calculator">
+      <input type="text" id="result" placeholder="Output here" readonly>
+      <div class="buttons">
+        <button class="btn btn-primary" onclick="appendNumber('7')">7</button>
+        <button class="btn btn-primary" onclick="appendNumber('8')">8</button>
+        <button class="btn btn-primary" onclick="appendNumber('9')">9</button>
+        <button class="btn btn-secondary" onclick="appendOperator('+')">+</button>
+        <button class="btn btn-primary" onclick="appendNumber('4')">4</button>
+        <button class="btn btn-primary" onclick="appendNumber('5')">5</button>
+        <button class="btn btn-primary" onclick="appendNumber('6')">6</button>
+        <button class="btn btn-secondary" onclick="appendOperator('-')">-</button>
+        <button class="btn btn-primary" onclick="appendNumber('1')">1</button>
+        <button class="btn btn-primary" onclick="appendNumber('2')">2</button>
+        <button class="btn btn-primary" onclick="appendNumber('3')">3</button>
+        <button class="btn btn-secondary" onclick="appendOperator('*')">*</button>
+        <button class="btn btn-primary" onclick="appendNumber('0')">0</button>
+        <button class="btn btn-danger" onclick="clearInput()">C</button>
+        <button class="btn btn-secondary" onclick="appendOperator('/')">/</button>
+         <button class="btn btn-secondary" onclick="calculate()">=</button>
+      </div>
+      <h4 style="color: aliceblue;font-family: fantasy; padding: 5px; margin-top: 10px; text-align: center;">&copy; CASIO Calculators </h4>
+    </div>
+    <footer>
+    <h2 class="h2">Developed by <br/> <span style="color: aqua;text-transform:uppercase;padding: 10px; text-align: center;"> Sheikh Shanto</span> </h2>
+</footer>
+  </div>
+  <div class="text">
+    <h1 class="text2">welcome to Online Calculator! We have a range of free, easy to use calculators, conversion tools, and much more!
+       Our tools are designed to help you perform a wide range of calculations and conversions quickly and accurately, whether you're at home, at work, or on the go.</h1>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
